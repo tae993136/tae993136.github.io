@@ -1,19 +1,16 @@
-<!DOCTYPE html>     <!-- anchor2.html -->
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!doctype html><!-- anchor2.html-->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
   header, nav, section, article, aside, footer
   {border:1px solid gray; margin:5px; padding:8px; width:1000px; }
   header img { width:990px; height:200px; }
   section{width:1000px; float:left;}
   section section{width:975px; float:left;}
-  section section video{ posittion:relative; top:10px; left:100px; height:300px; width:700px;}
-  aside{width:221px; float:left; line-height:30px;}
+  section video{ position:relative; top:10px; left:100px; height:300px; width:700px;}
   footer{height:50px; clear:both; }
   nav ul{margin:0; padding:0;}
   nav ul li{display:inline; margin:5px;}
-  aside ul {margin:0; padding:0;}
-  aside ul li{display:block; margin:5px;}
-  aside ul li img { width:50px; height;50px;}
   a:link {
   color:blue; background-color:transparent; text-decoration:none;}
 a:visited {
@@ -23,34 +20,33 @@ a:hover {
 a:active {
   color:blue; background-color:transparent; text-decoration:none;}
   </style>
-  <title>시멘틱 학습</title>
-  </head>
+  <title>시멘틱 학습</title></head>
   <body>
     <header>
-      <h2>실습을 환영합니다</h2>
-      <img src="tae993136.github.io/scene.png" alt="히말라야"/>
-</header>
-<nav>
-  <ul>
-  <li><a href="http://www.naver.com" target="_blank">네이버(새윈도우)</a></li>
-  <li><a href="tae993136.github.io/basicSementic3.html">홈</a></li>
-  <li><a href="#chapter1">제1장이동(북마크이동)</a></li></ul>
-</nav>
-<section>  <!-- main  -->
-<section><h3 id="chapter1">오늘의 교통상황</h3>
-  <p>오늘의 교통상황을 비디오로 제공합니다. 장소는 대한민국 만세로 입니다. 많은 자동차로 붐비고 있습니다.
-  자동차와 자동차간 거리가 1미터 이내로 사고 우려가 높았습니다. 하지만, 다행이도 사고는 발생하지 않았습니다.
-  아래가 교통상황 입니다.</p>
-  <h4>만세로 교통상황</h4>
-  <video id="traffic" controls="controls">
-    <source src="traffic.mp4" type="video/mp4">
-    <source src="traffic.ogg" type="video/ogg">
-    <source src="trffic.webm" type="video/webm">
-     브라우저가 자원하지 않거나 비디오 형식의 파일이 존재하지 않습니다!!!  </video><hr/>
-   </section>
-</section>  <!-- main  -->
-<footer>
-  <p>&copy;2020 Made by korea. All rights reserved.</p>
- </footer>
-</body>
+      <h2>실습을 환영합니다.</h2>
+      <img src="scene.png" alt="히말라야"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="http://www.naver.com" target="_blank">네이버(새윈도우)</a></li>
+        <li><a href="https://kjsu1994.github.io/basicSementic3.html">홈</a></li>
+        <li><a href="#chapter1">제1장이동(북마크이동)</a></li></ul>
+    </nav>
+    <sction><!-- main-->
+      <section><h3 id="chapter1">오늘의 교통상황</h3>
+        <p>오늘의 교통상황을 비디오로 제공합니다. 장소는 대한민국 만세로 입니다. 많은 자동차로 붐비고있습니다.
+          자동차와 자동차간 거리가 1미터 이내로 사고우려가 높았습니다. 하지만, 다행히도 사고는 발생하지 않았습니다.
+          아래가 교통상황 입니다.</p>
+        <h4>만세로 교통상황</h4>
+        <video id="traffic" controls="controls">
+          <source src="audio/traffic.mp4" type="video/mp4">
+          <source src="audio/boom.ogg" type="video/ogg">
+          <source src="audio/boom.webm" type="wideo/webm">
+          브라우저가 지원하지 않거나 비디오 형식의 파일이 존재하지 않습니다!!!</video><hr/>
+      </section>
+      </section><!-- main-->
+    <footer>
+      <p>&copy;20XX Made by Korea. all right reserved.</p>
+    </footer>
+  </body>
 </html>
