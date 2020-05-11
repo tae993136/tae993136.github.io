@@ -1,0 +1,90 @@
+<!DOCTYPE html>     <!-- basicSementicMember1.html -->
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+  header, nav, section, article, aside, footer
+  {border:1px solid gray; margin:5px; padding:8px; width:1000px; }
+  header h2 { float:left; border:solid 1px gray; margin:20px 0 0 0: }
+  header ul {margin:0; padding:0;}
+  header ul li {display:inline; margin:5px;}
+  header img { width:990px; height:200px; }
+  section{width:750px; float:left;}
+  section section{width:725px; float:left;}
+  aside{width:221px; float:left; line-height:30px;}
+  footer{height:50px; clear:both; }
+  nav ul{margin:0; padding:0;}
+  nav ul li{display:inline; margin:5px;}
+  aside ul {margin:0; padding:0;}
+  aside ul li{display:block; margin:5px;}
+  aside ul li img { width:50px; height;50px;}
+  a:link { color:blue; background-color:transparent; text-decoration:none;}
+a:visited { color:pink; background-color:transparent; text-decoration:none;}
+a:hover { color:red; background-color:transparent; text-decoration:underline;}
+a:active { color:blue; background-color:transparent; text-decoration:none;}
+  </style>
+  <title>시멘틱 학습</title></head>
+ <body>
+  <header>
+  <h2><a href="https://tae993136.github.io/basicSementic4.html">실습을 환영합니다</a></h2>
+  <ul id="headMenu">
+  <li>로그인│</li>
+  <li><a href="https://tae993136.github.io/basicSementicMember1.html">회원가입</a>│</li>
+  <li>사이트맵</li>
+  </ul>
+  <img src="scene.png" alt="히말라야"/>
+  </header>
+  <nav>
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/" target="_blank">Html5</a></li>
+   <li><a href="jquery.com/" target="_blank">JQuery</a></li>
+    <li><a href="jquerymobile.com/" target="_blank">jQuery Mobile</a></li>
+    <li><a href="./jspintro.html">JSP</a></li></ul>
+    </nav>
+<section> <!-- main -->
+<section id="memberArea">
+<form id="memberForm" action="http://jspwork.herpkuapp.com/ex/regCheck.jsp" method="post">
+<fieldset><legend>회원정보</legend>
+<fieldset><legend>이름/이메일</legend>
+<label for="stud_name">이름</label>
+<input id="stud_name" type="text" name="stud_name" size="20" maxlength="50" required/><br/>
+<label for="stud_email">이메일</label>
+<input id="stud_email" type="text" name="stud_email" size="20" maxlength="50"/><br/>
+<label for="stud_phone">전화번호</label>
+<input id="stud_phone" type="text" name="stud_phone" size="20" maxlength="50"/><br/>
+</fieldset>
+<fieldset><legend>아이디/비밀번호</legend>
+<label for="stud_id">아이디</label>
+<input id="stud_id" type="text" name="stud_id" size="20" maxlength="50" required/><br/>
+<label for="stud_password">비밀번호</label>
+<input id="stud_password" type="password" name="stud_password" size="20" maxlength="50" repuired/><br/>
+</fieldset>
+<fieldset><legend>성별</legend>
+<label for="stud_gender1">여자</label>
+<input id="stud_gender1" type="radio" name="stud_gender" value="여자" checked/>
+<label for="stud_gender2">남자</label>
+<input id="stud_gender2" type="radio" name="stud_gender" value="남자" />
+</fieldset>
+<fieldset><legend>취미</legend>
+    <label for="stud_hobby1">낚시</label>
+    <input type="checkbox" id="stud_hobby1" name="stud_hobby" value="낚시"/ >
+    <label for="stud_hobby2">바둑</label>
+    <input type="checkbox" id="stud_hobby2" name="stud_hobby" value="바둑"/ >
+    <label for="stud_hobby3">독서</label>
+    <input type="checkbox" id="stud_hobby3" name="stud_hobby" value="독서"/ >
+</fieldset>
+</form>
+</section>
+</section> <!-- /main-->
+ <aside>
+   <ul>
+     <li><a href=https://www.google.com><img src="googlePlus.png" alt="구글"/></a></li>
+     <li><a href=https://www.facebook.com><img src="facebookOne.png" alt="페이스북"/></a></li>
+     <li><a href=https://twitter.com><img src="twitterYou.png" alt="트위터"/></a></li>
+   </ul>
+</aside>  
+<footer>
+  <p>&copy;2020 Made by korea. All rights reserved.</p>
+ </footer>
+</body>
+</html>
