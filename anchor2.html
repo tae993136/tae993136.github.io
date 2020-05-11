@@ -4,6 +4,10 @@
 <style>
   header, nav, section, article, aside, footer
   {border:1px solid gray; margin:5px; padding:8px; width:1000px; }
+  header h2 { float:left; border:solid 1px gray; margin:20px 0 0 0: }
+  header #headMenu { float:right; border:solid 1px gray; margin:20px 0 0 0: }
+  header ul {margin:0; padding:0;}
+  header ul li {display:inline; margin:5px;}
   header img { width:990px; height:200px; }
   section{width:1000px; float:left;}
   section section{width:975px; float:left;}
@@ -11,32 +15,42 @@
   footer{height:50px; clear:both; }
   nav ul{margin:0; padding:0;}
   nav ul li{display:inline; margin:5px;}
-  a:link {
-  color:blue; background-color:transparent; text-decoration:none;}
-a:visited {
-  color:pink; background-color:transparent; text-decoration:none;}
-a:hover {
-  color:red; background-color:transparent; text-decoration:underline;}
-a:active {
-  color:blue; background-color:transparent; text-decoration:none;}
+  a:link { color:blue; background-color:transparent; text-decoration:none;}
+a:visited { color:pink; background-color:transparent; text-decoration:none;}
+a:hover { color:red; background-color:transparent; text-decoration:underline;}
+a:active { color:blue; background-color:transparent; text-decoration:none;}
   </style>
   <title>시멘틱 학습</title></head>
   <body>
-    <header>
-      <h2>실습을 환영합니다.</h2>
-      <img src="scene.png" alt="히말라야"/>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="http://www.naver.com" target="_blank">네이버(새윈도우)</a></li>
-        <li><a href="https://tae993136.github.io/basicSementic3.html">홈</a></li>
-        <li><a href="#chapter1">제1장이동(북마크이동)</a></li></ul>
+  <header>
+  <h2><a href="https://tae993136.github.io/basicSementic4.html">실습을 환영합니다</a></h2>
+  <ul id="headMenu">
+  <li>로그인│</li>
+  <li><a href="https://tae993136.github.io/basicSementicMember1.html">회원가입</a>│</li>
+  <li>사이트맵</li>
+  </ul>
+  <img src="scene.png" alt="히말라야"/>
+  </header>
+  <nav>
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/" target="_blank">Html5</a></li>
+   <li><a href="jquery.com/" target="_blank">JQuery</a></li>
+    <li><a href="jquerymobile.com/" target="_blank">jQuery Mobile</a></li>
+    <li><a href="./jspintro.html">JSP</a></li></ul>
     </nav>
     <sction><!-- main-->
       <section><h3 id="chapter1">오늘의 교통상황</h3>
         <p>오늘의 교통상황을 비디오로 제공합니다. 장소는 대한민국 만세로 입니다. 많은 자동차로 붐비고있습니다.
           자동차와 자동차간 거리가 1미터 이내로 사고우려가 높았습니다. 하지만, 다행히도 사고는 발생하지 않았습니다.
-          아래가 교통상황 입니다.</p>
+          아래가 교통상황 입니다. 애국가를 같이 불러 봅시다.
+          1절 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한 사람,
+          대한으로 길이 보전하세
+          2절 남산 위에 저 소나무 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강산 대한 사람,
+          대한으로 길이 보전하세
+          3절 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세. 무궁화 삼천리 화려강산 대한 사람,
+          대한으로 길이 보전하세
+          4절 이 기상과 이맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세. 무궁화 삼천리 화려강산 대한 사람,
+          대한으로 길이 보전하세</p>
         <h4>만세로 교통상황</h4>
         <video id="traffic" controls="controls">
           <source src="traffic.mp4" type="video/mp4">
