@@ -1,0 +1,22 @@
+<!doctype html> <!-- cssText1.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  #idNameBlue{ color:silver; } #idHexBlue{ color:#C0C0C0; } 
+  p#left{ text-align:left; } p#right{ text-align:right; } p#center{ text-align:center; } p#justify{ text-align:justify; }
+  p>span.unln { text-decoration:underline; } p>span.ovln { text-decoration:overline; }
+  p>span.lnth { text-decoration:line-through; }
+  p#indent { text-indent:2em; } p>span.shadow { text-shadow:0.1em 0.1em 0.2em #000000; }</style>
+  <title>CSS 텍스트 실습</title></head>
+  <body><section id="section1"><h3>애국가</h3>
+    <p id="idNameBlue">동해물과 백두산이 마르고 닳도록(이름 silver)</p>
+    <p id="idHexBlue">하느님이 보우하사 우리 나라만세(HEX회색)</p>
+    <p id="left">무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세(왼쪽정렬)</p>
+    <p id="right">남산 위에 저 소나무 철갑을 두른 듯(오른쪽 정렬)</p>
+    <p id="center">바람 서리 불변함은 우리 기상일세(중앙정렬)</p>
+    <p id="justify">가을하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세 무궁화 삼천리 화려강산 
+    대한 사람 대한으로 길이 보전하세(양쪽정렬)</p>
+    <p><span class="unln">무궁화</span> <span class="ovln">삼천리</span> 화려강산 <span class="lnth">대한 사람</span>
+    대한으로<span class="unln">길이 보전하세</span></p>
+    <p id="nident">무궁화 삼천리 <span class="shadow">화려강산</span> 대한 사람 대한으로 길이 보전하세</p>
+  </section>
+  </body></html>
