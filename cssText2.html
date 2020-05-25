@@ -1,0 +1,25 @@
+<!doctype html> <!-- cssText2.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  .letterSpaceA{ letter-spacing:-3px; } .letterSpaceB{ letter-spacing:3px; }
+  .wordSpaceA{ word-spacing:0.2em; } .wordSpaceB{ word-spacing:1em; }
+  .verticalAlignT {vertical-align:text-top;} .verticalAlignB {vertical-align:text-bottom;}
+  .lineHeightA { line-height:1em; } .lineHeightB { line-height:2em; }
+</style>
+  <title>CSS 텍스트 실습</title></head>
+  <body><section id="section1"><h3>애국가</h3>
+    <p class="letterSpaceA">동해물과 백두산이 마르고 닳도록(좁게)</p>
+    <p class="letterSpaceB">하느님이 보우하사 우리 나라만세(넓게)</p>
+    <p><span class="wordSpaceA">무궁화 삼천리 화려강산(0.2em 단어간격)</span></p>
+    <p><span class="wordSpaceB">대한 사람 대한으로 길이 보전하세</span></p>
+    <p>남산 위에 저 <img src="taegeuk.png" class="verticalAlignT" width="100" height="50"/> 소나무
+    철갑을 두른 듯(TOP)바람 서리 불변함은 우리 기상일세</p>
+    <p><img src="taegeuk.png" class="verticalAlignB" width="100" height="50"/>가을하늘
+    공활한데(Bottom) 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세 무궁화 삼천리 화려강산 
+    대한 사람 대한으로 길이 보전하세</p>
+    <p class="lineHeightA">무궁화 삼천리 화려강산 <br/>
+      대한 사람 대한으로 길이 보전하세(lineheight=1em)<br/></p>
+    <p class="lineHeightB">이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세<br/>
+        무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세(lineheight=2em)</p>
+  </section>
+  </body></html>
