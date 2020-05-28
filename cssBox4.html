@@ -1,0 +1,45 @@
+<!doctype html><!-- cssBox4.html-->
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+* {box-sizing:border-box; padding:0; margin:0}
+.box1 {width:20.0em; height:5.0em; background-color:beige; border:solid 2px lightgray; border-radius:1em; box-shadow:9px 6px 6px gray; text-align:left;}
+.bs1{border-style:solid;} .bs2{border-style:dashed;} .bs3{border-style:dotted;} .bs4{border-style:double;}
+.bs5{border-style:groove;} .bs6{border-style:ridge;} .bs7{border-style:inset;} .bs8{border-style:outset;}
+.margin1 {margin:20px 30px 40px 20px;}
+.lbsize1 {display:inline-block; width:5.0em; height:1.2em; text-align:right; padding:0.5em;}
+.ipsize1 {width:10em; height:1.8em;}
+.btsize1 {position:relative; top:-55px; left:240px; width:5.0em; height:4.0em;}
+</style>
+<title>CSS BOX 실습</title></head><body><section><h3>로그인(보더)스타일</h3>
+<form class="box1 bs5 margin1" action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp" method="post">
+<label class="lbsize1" for="namex">아이디</label>
+<input class="ipsize1" id="namex" type="text" name="namex" size="20" maxlenght="20" 
+placeholder="아이디입력"/><br/>
+<label class="lbsize1" for="passx">패스워드</label>
+<input class="ipsize1" id="passx" type="password" name="passx"/><br/>
+<input class="btsize1" type="submit" value="로그인"/>
+</form>
+<form class="box1 bs6 margin1" action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp" method="post">
+<label class="lbsize1" for="namex">아이디</label>
+<input class="ipsize1" id="namex" type="text" name="namex" size="20" maxlength="20" 
+placeholder="아이디입력"/><br/>
+<label class="lbsize1" for="passx">패스워드</label>
+<input class="ipsize1" id="passx" type="password" name="passx"/><br/>
+<input class="btsize1" type="submit" value="로그인"/>
+</form>
+<form class="box1 bs7 margin1" action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp" method="post">
+<label class="lbsize1" for="namex">아이디</label>
+<input class="ipsize1" id="namex" type="text" name="namex" size="20" maxlength="20" 
+placeholder="아이디입력"/><br/>
+<label class="lbsize1" for="passx">패스워드</label>
+<input class="ipsize1" id="passx" type="password" name="passx"/><br/>
+<input class="btsize1" type="submit" value="로그인"/>
+</form>
+<form class="box1 bs8 margin1" action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp" method="post">
+<label class="lbsize1" for="namex">아이디</label>
+<input class="ipsize1" id="namex" type="text" name="namex" size="20" maxlength="20" placeholder="아이디입력"/><br/>
+<label class="lbsize1" for="passx">패스워드</label>
+<input class="ipsize1" id="passx" type="password" name="passx"/><br/>
+<input class="btsize1" type="submit" value="로그인"/>
+</form>
+</section></body></html>
