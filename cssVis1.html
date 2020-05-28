@@ -1,0 +1,26 @@
+<!doctype html>  <!-- cssVis1.html-->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+.dispinline{ display:inline; border:1px solid black;}
+.dispnone{ display:none;} .vishidden{ visibility:hidden;}
+table, tr, th, td{ border:1px solid black; border-collapse:collapse;} tr.collapse{visibility:collapse;}
+</style>
+<title>CSS dispaly/visibillty 실습</title></head>
+<body>
+<section><h4>1. 리스트 아이템 '회원관리' 삭제 display=none</h4>
+<ul><li class="dispinline">로그인ㅣ</li><li class="dispnone">회원가입ㅣ</li><li class="dispinline">사이트맵</li></ul>
+<h4>2. 리스트아이템 '회원관리' 숨기기 display=inline, visibility=hidden</h4>
+<ul><li class="dispinline">로그인ㅣ</li><li class="dispinline vishidden">회원가입ㅣ</li>
+<li class="dispinline">사이트맵</li></ul></section>
+<section><h4>3. 보통 테이블</h4>
+<table>
+<tr><td>홍길동</td><td>이몽룡</td></tr>
+<tr><td>성춘향</td><td>변사또</td></tr>
+</table></section>
+<section><h4>4. 테이블에서 아래 row 삭제, collapse, visibility=collapse</h4>
+<table>
+<tr><td>홍길동</td><td>이몽룡</td></tr>
+<tr class="collapse"><td>성춘향</td><td>변사또</td></tr>
+</table>
+</section></body></html>
