@@ -1,0 +1,24 @@
+<!doctype html> <!-- cssBox1g.html -->
+<html><meta chaset-"utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+div.box1 { display:block; width:300px; padding:10px; border:5px dotted gray; margin:0;}
+div.box2 { box-sizing:border-box; display:block; width:300px; padding:10px; border:5px solid gray; margin:0;}
+div.container { box-sizing:border-box; width:600px; border:1px solid black;}
+.box3 { box-sizing:border-box; width:50%; border:1px solid red; float: left;}
+</style>
+<title>CSS BOX 실습 </title></head>
+<body><section><h3>박스</h3>
+<img src="lobster.png" width="300" height="200" alt="랍스터">
+<div class="box1">위 랍스터 그림 콘텐트의 크기는 300*200인 반면 지금 읽고 있는 엘리먼트의 크기는 콘텐트 폭 300,
+패딩 20, 보더 10을 더한 330 입니다.</div>
+<p></p>
+<div class="box2">하지만, box sizing의 border-box 속성값을 사용하면 콘텐트, 패딩, 보더 포함하여 그림과 같이
+너비가 300이 됩니다.</div>
+<div>300px그림 두 개를 붙여봅시다. 그림의 너비가 300이고 보더가 1px이므로 그림이 한 블럭안에 나타나지
+않습니다. 하지만, box-sizing의 border-box 사용하고 너비를 50%로 설정하면 복잡한 계산없이 표현됩니다.</div>
+<div class="container">
+<img src="lobster.png"><img src="lobster.png"><div style="clear:both;"></div></div>
+<div class="container">
+<img class="box3" src="lobster.png"><img class="box3" src="lobster.png">
+<div style="clear:both;"></div></div>
+</section></body></html>
