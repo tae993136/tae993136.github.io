@@ -1,0 +1,16 @@
+<!doctype html> <!-- cssClear1.html --> 
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> 
+  *{margin:0; padding:0;} p{text-align:justify;} .bdcolor {border:1px solid blue;} /*보더추가*/
+  img {display:block;} /* display:bloc;은 img 테두리 흰공간 제거*/
+  .img1 {float:left; margin:5px; } .img2 {clear:both; margin:5px; }</style><title>CSS float 실습</title></head>
+<body>
+<section><h4>부유 실습</h4>
+  <p>다음 예제는 그림을 배열하기 위해 왼쪽에 부유(float)하는 모습을 작성한 것입니다. 그림 3개 후에 4번째 그림은 clear:both를
+   사용하여 부유하지 않도록 하였습니다. 참고로 그림은 display:block을 사용함</p>
+   <h4>부유 있음</h4>
+  <div><img class="img1 bdcolor" src="lobster.png" width="600" height="400"/></div>
+  <div><img class="img1 bdcolor" src="lobster.png" width="600" height="400"/></div>
+  <div><img class="img1 bdcolor" src="lobster.png" width="600" height="400"/></div>
+  <div><img class="img2 bdcolor" src="lobster.png" width="600" height="400"/></div>
+</section></body></html>
