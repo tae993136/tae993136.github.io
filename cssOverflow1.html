@@ -1,0 +1,25 @@
+<!doctype html> <!-- cssOverflow1.html --> 
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> 
+  *{margine:0; padding:0;} p{text-align:justify;} .bdcolor {border:1px solid blue;} /*보더추가*/
+  .over1 {overflow:visible;} .over2 {overflow:hidden;} .over3 {overflow:scroll;} .over4 {overflow:auto;}
+  .overx1 {overflow-x:hidden;} .overy1 {overflow-y:scroll;}
+  .bk1 {height:50px; width:24%; background-color:beige;} .float1{float:left;} .clear1{clear:both;}
+  </style><title>CSS overflow 실습</title></head>
+<body><section><h4>오버플로우 실습</h4>
+  <p>다음 예제는 문장의 글자수가 설정된 박스보다 큰 경우인 오버플로우에 대한 처리 방법을 설명하고 있다.</p>
+  <div>
+    <div class="over1 bk1 bdcolor float1">(visible)동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세</div>
+     <div class="over2 bk1 bdcolor float1">(hidden)동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세</div>
+     <div class="over3 bk1 bdcolor float1">(scroll)동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세</div>
+     <div class="over4 bk1 bdcolor float1">(auto)동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세</div>
+    </div><br class="clear1"/><br/><br/>
+    <p>다음 예제는 overflow-x와 overflow-y에 대한 설명하고 있다.</p>
+    <div>
+    <div clsaa="overx1 overy1 bk1 bdcolor float1">(x-hidden, y-scroll)동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려강산 대한 사람 대한으로 길이 보전하세</div>
+</></section></body></html>
