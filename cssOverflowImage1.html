@@ -1,7 +1,7 @@
 <!doctype html> <!-- cssOverflowImage1.html --> 
 <html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style> 
-  *{margin:0; padding:0;} p{text-align:justify;} .bdcolor {border:1px solid bl     ue;} /*보더추가*/
+  *{margin:0; padding:0;} p{text-align:justify;} .bdcolor {border:1px solid blue;} /*보더추가*/
   .imageOver::after {content:""; clear:both; display:table;}
   .float1{float:left;} .clear1{clear:both;}
   </style><title>CSS overflow 실습</title></head>
@@ -11,7 +11,8 @@
   <div class="bdcolor">
     <img class="float1" src="usb.png" width="100" height="140">
       이미지의 높이가 이미지를 보유하는 엘리먼트보다 더 큰 상태로 이미지 오버플오우가 발생한다. 이때는 어떻게 하나...
-  </div><br class="bdcolor imageOver">
+  </div><br class="clear1"/>
+ <div class="bdcolor imageOver">
     <img class="float1" src="usb.png" width="100" height="140">
     이미지의 높이가 이미지를 보유하는 엘리먼트보다 더 큰 상태로 이미지 오버플오우가 발생한다. 이때는 어떻게 하나...
     pseudo element인 ::after를 쓰는 것이 유행이다.
