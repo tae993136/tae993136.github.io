@@ -1,0 +1,24 @@
+<!doctype html> <!-- login5.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> *{padding:0; margin:0;}
+#section0 { width:230px; height:95px; margin:10px; padding:10px; border:solid 1px lightgray; border-radius:1em; }
+ul.level_1 > li {list-style:none; display:inline-block; vertical-align:bottom;}
+ul.level_1 > li > ul {list-style:none;}
+.level_2 span { display:inline-block; width:70px;} .level_2 input { width:100px;}
+#loginBtn button { margin-left:5px; height:42px; }
+#join_find {list-style:none; text-decoration:none; margin-top:10px;} #join_find li{display:inline; margin:5px;}
+a:link {color:blue; text-decoration;none;} a:visited {color:purple; text-decoration;none;}
+a:hover {text-decoration:underline;} a:active { color:red; text-decoration:none;}
+</style><title>로그인 실습 </title></head>
+<body><section id="section0"><h4>로그인</h4>
+<form action="http://hive.dju.ac.kr/~drkdhong/html5/login.jsp" method="post">
+<ul class="level_1">
+<li>
+ <ul class="level_2">
+ <li><span>아이디</span><input type="text"></li>
+ <li><span>비밀번호</span><input type="password"></li>
+</ul>
+<li id="loginBtn"><button>로그인</button></li></ul>
+<li><a href="#">회원가입</a></li><li><a href="#">비밀번호찾기</a></li></ul>
+</form>
+</section></body></html>
