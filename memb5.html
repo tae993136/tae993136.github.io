@@ -1,0 +1,25 @@
+<!doctype html> <!-- memb5.html -->
+<html><head><meta charset="utf-8"/>
+<style>
+*{padding:0; margin:0;}
+#section0 { width:270px; height:125px; border:solid 1px lightgray; margin:0; padding:0; border-radius:1em; box-shadow:9px 6px 6px gray; }
+ul { list-style:none;} ul.level_1 > li { display:inline-block; line-height:1.5em;}
+.level_1 span { display:inline-block; width:70px;} .level_1 input { width:100px;} 
+.level_1 input[type="checkbox"]{width:20px;}
+.level_1 button {margin_left:5px; width:70px; height:25px;}
+</style><title>회원가입실습 </title></head>
+<body><section id="section0"><h4>회원가입</h4>
+<form action="https://jsptogo.herokuapp.com/jspsrc/memb5.jsp" method="post">
+<ul class="level_1">
+<li><span>아이디</span></li><li><input type="text" name="namex"></li>
+<li><button>중복확인</button></li>
+</ul>
+<ul class="level_1">
+<li><span>비밀번호</span></li><li><input type="password" name="passx"></li></ul>
+<ul class="level_1">
+<li><span>취미</span></li><li><input type="checkbox" name="hobby" value="fishing">낚시</li>
+<li><input type="checkbox" name="hobby" value="singing">노래</li><li><input type="checkbox" name="hobby" value="reading">독서</li></ul>
+<ul class="level_1">
+<li><button type="submit">회원가입</button></li><li><button type="reset">취소</button></li>
+</ul>
+</section></body></html>
