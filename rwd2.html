@@ -1,0 +1,28 @@
+<!DOCTYPE html>     <!-- rwd2.html -->
+<html>
+<head><head><meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style> *{box-sizing: border-box; padding:0; margin:0;} .row::after{ content:""; clear:both; display:table; }
+  .col-1{width:8.33%;} .col-2{width:16.66%;} .col-3{width:25%;} .col-4{width:33.33%;} 
+  .col-5{width:41.66%;} .col-6{width:50%;} .col-7{width:58.33%;} .col-8{width:66.66%;}
+  .col9-{width:75%;} .col-10{width:83.33%;} .col-11{width:91.66%;} .col-12{width:100%;}
+  [class*="col-"] {float:left; padding:10px;} .header, .footer {background-color:lightgray; color:blue; padding:10px;}
+  .menu ul, .banner ul {list-style-type:none;}
+  .menu li {background-coler:pink; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .,enu li:hover { background-color:red;}
+  .banner li { border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .banner li img { width:30%; vertical-align:middle;}
+  @media only screen and (max-width: 768px){ [class*="col-"] {width:100%;}}
+</style><title>RWD 실습</title></head>
+<body><header class="header"><h2>한국의 도시</h2></header>
+<div class="row"></div>
+<div id="main">
+  <nav class="col-3 menu"> <!--메뉴-->
+    <ul><li>서울</li><li>대전</li><li>대구</li><li>부산</li></ul></nav>
+<section class="col-6">
+  <h3>대전광역시</h3><p>우리나라 중앙에 위치한 150만...</p></section>
+<aside class="col-3 banner">
+  <ul><li><img src="flag.png">한국</li><li><img src="flag.png">Korea</li></ul></aside>
+  </div><div class="row"></div>
+<footer class="footer"><h4>Copyright 20XX Korea.</h4>
+</body>
+</html>
