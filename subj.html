@@ -1,0 +1,31 @@
+<!DOCTYPE html>     <!-- subj.html -->
+<html>
+<head><meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style> *{box-sizing: border-box; padding:0; margin:0;} .row::after{ content:""; clear:both; display:table; }
+  .col-1{width:8.33%;} .col-2{width:16.66%;} .col-3{width:25%; height:100%;} .col-4{width:33.33%;} 
+  .col-5{width:41.66%;} .col-6{width:50%; height:100%;} .col-7{width:58.33%;} .col-8{width:66.66%;}
+  .col9-{width:75%;} .col-10{width:83.33%;} .col-11{width:91.66%;} .col-12{width:100%;}
+  [class*="col-"] {float:left; padding:10px;} .header, .footer {background-color:lightgray; color:blue; padding:10px;}
+  .prof img { width:20%; float:right;}
+  .button {  width: 100px; height: 35px; font-size: 15px; color: black; background-color: white; border: none; border-radius: 45px;
+  box-shadow: 0px 3px 6px;  margin-bottom:5px }
+  .button:hover {color:blue; box-shadow: 0px 3px 6px;}  
+  @media only screen and (max-width: 768px){ [class*="col-"] {width:100%;}}
+</style><title>기술이력서</title></head>
+<body><header class="header"><center><h2><a href="resume.html">수강과목</a></h2></center></header>
+<div class="row"></div>
+<div id="main">
+  <nav class="col-3"> <!--메뉴-->
+    <ul><li><a href="cert.html"><button class="button">자격증</button></a></li><br/><br/><br/>
+    <li><a href="subj.html"><button class="button">수강과목</button></a></li><br/><br/><br/>
+     <li><a href="cont.html"><button class="button">경진대회경력</button></a></li><br/><br/><br/>
+     <li><a href="caps.html"><button class="button">캡스톤</button></a></li><br/><br/><br/>
+    <li><a href="club.html"><button class="button">동아리활동</button></a></li><br/><br/><br/>
+    <li><a href="develop.html"><button class="button">개발이력</button></a></li></ul></nav>
+<section class="col-6 prof"><img src="profile.jpg" alt="김석진"/>
+  <h3>취득</h3><br/><p>이름: 김석진</p><br/><p>이메일: <a href="mailto:tae993136@gmail.com">tae993136@gmail.com</a></p><br/>
+  <p>학력: 대전대학교 재학</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></section>
+  </div><div class="row"></div>
+<footer class="footer"><h4>Copyright 20XX Korea.</h4></footer>
+</body>
+</html>
