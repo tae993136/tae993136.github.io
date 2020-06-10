@@ -1,0 +1,26 @@
+<!doctype html> <!-- cssTable2.html -->
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+table, th, td { border:1px solid black; border-collapse: collapse;} table { width:100%;}
+th, td{ text-align:center; padding:10px; vertical-align:bottom;}
+tr:nth-child(odd){ background-color:lightgray; }
+th {background-color:gray; color:white;}
+table ex1 {table-layout:auto;} /*자동으로 테이블 배열 기능을 사용*/
+</style>
+<title>CSS 테이블 실습</title></head>
+<body>
+<section><h3>반응형 테이블</h3>
+<p>다음은 반응형 테이블에 관한 것입니다. 반응형 테이블은 콘텐츠 테이블의 폭이 작은 경우에 수평스크롤바를
+표시하는 것입니다. 반응형 테이블을 위해서는 테이블 컨테이너에<strong>overflow-x:auto</strong>를 아래와 같이
+추가하면 됩니다. </p>
+<div style="overflow-x:auto;">
+<table class="ex1">
+<tr><th>이름</th><th>국어점수</th><th>영어점수</th><th>수학점수</th><th>물리점수 </th><th>화학</th>
+<th>생물점수 </th><th>기술점수 </th><th>국사점수 </th><th>한문점수</th><th>상식</th></tr>
+<tr><td>홍길동</td><td>95</td><td>77</td><td>67</td><td>80</td><td>85</td>
+  <td>86</td><td>79</td><td>80</td><td>95</td><td>85</td></tr>
+<tr><td>이몽룡</td><td>90</td><td>87</td><td>87</td><td>70</td><td>95</td>
+  <td>77</td><td>85</td><td>70</td><td>85</td><td>88</td></tr>
+<tr><td>변학도</td><td>85</td><td>79</td><td>75</td><td>86</td><td>55</td>
+  <td>60</td><td>95</td><td>85</td><td>75</td><td>80</td></tr>
+</table></div></section></body></html>
