@@ -5,14 +5,16 @@
   .col-1{width:8.33%;} .col-2{width:16.66%;} .col-3{width:25%; height:100%;} .col-4{width:33.33%;} 
   .col-5{width:41.66%;} .col-6{width:50%; height:100%;} .col-7{width:58.33%;} .col-8{width:66.66%;}
   .col9-{width:75%;} .col-10{width:83.33%;} .col-11{width:91.66%;} .col-12{width:100%;}
-  [class*="col-"] {float:left; padding:10px;} .header, .footer {background-color:lightgray; color:blue; padding:10px;}
+  [class*="col-"] {float:left; padding:10px;} .header, .footer {background-color:lightgray; padding:10px;}
   .menu {background-color:lightgray;}
   .prof img { width:20%; float:right;}
   .button {  width: 100%; height: 50px; font-size: 20px; color: black; background-color: white; border: none; border-radius: 45px;
   box-shadow: 0px 3px 6px;  margin-bottom:5px }
   .button:hover {color:blue; box-shadow: 0px 3px 6px;}  
-  .banner li { list-style:none; border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
-  .banner li img { width:30%; vertical-align:middle; float:center;}
+  .banner { text-align:center;}
+  .banner ul { text-align:center; }
+  .banner li { display:inline-block; width:60%; list-style:none; border:none; padding:10px; margin-bottom:10px; }
+  .banner li img { width:30%; vertical-align:middle; filter: drop-shadow(5px 5px 5px gray); }
   @media only screen and (max-width: 768px){ [class*="col-"] {width:100%;}}
   ul li {list-style:none;}
   ol {list-style:none;}
